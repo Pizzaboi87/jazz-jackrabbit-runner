@@ -4,7 +4,10 @@ import { ctx } from "../kaplayCtx";
 export const opening = (): void => {
     if (!ctx.getData("best-score")) ctx.setData("best-score", 0);
 
-    ctx.onButtonPress("start", () => ctx.go("main-menu"));
+    ctx.onButtonPress("start", () => {
+        ctx.go("main-menu")
+        ctx.setFullscreen(true);
+    });
 
     ctx.add([
         ctx.sprite("openBackground"),

@@ -20,7 +20,17 @@ export const drawMenuText = ({ instruction }: { instruction: string }): void => 
 
     {
         notOpenScreen && ctx.add([
-            ctx.text("For jumping, press space, UP or W button", {
+            ctx.text('For jumping, press "space", "UP" or "W" button', {
+                font: "yewb",
+                size: 25,
+            }),
+            ctx.anchor("center"),
+            ctx.pos(ctx.center().x, ctx.center().y + 50),
+            ctx.color(40, 40, 40),
+        ])
+
+        notOpenScreen && ctx.add([
+            ctx.text('Press the "Esc" key to exit full screen.', {
                 font: "yewb",
                 size: 25,
             }),
@@ -36,7 +46,7 @@ export const drawMenuText = ({ instruction }: { instruction: string }): void => 
             size: 25,
         }),
         ctx.anchor("center"),
-        ctx.pos(ctx.center().x, ctx.center().y + 150),
+        ctx.pos(ctx.center().x, ctx.center().y + 250),
         ctx.color(notOpenScreen ? [40, 40, 40] : [255, 255, 255])
     ]);
 }

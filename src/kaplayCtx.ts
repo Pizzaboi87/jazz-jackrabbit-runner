@@ -14,9 +14,8 @@ export const ctx = kaplay({
             mouse: "left",
         },
         start: {
-            keyboard: [
-                "space"
-            ],
+            keyboard: ["space"],
+            mouse: "left"
         }
     }
 });

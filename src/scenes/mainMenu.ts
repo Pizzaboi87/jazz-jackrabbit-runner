@@ -17,6 +17,6 @@ export const mainMenu = (): void => {
     drawMenuText({ instruction: "Press JUMP to Play" });
 
     // Draw the player character
-    drawPlayer({ posX: 100, posY: 890 });
+    drawPlayer({ posX: 100, posY: 900 });
 }
 

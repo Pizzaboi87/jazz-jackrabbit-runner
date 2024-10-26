@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     VitePWA({
       manifest: {
-        includeAssets: ["favicon.ico", "apple-touch-icon.png", "assets/*"],
+        includeAssets: ["favicon.ico", "apple-touch-icon.png", "graphics/*", "sounds/*", "fonts/*"],
         name: "Jazz Jackrabbit Runner",
         short_name: "Jazz",
         start_url: "/",
